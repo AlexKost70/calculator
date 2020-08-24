@@ -4,7 +4,7 @@ let display = document.querySelector('.display');
 function operate(operator, firstNumber, secondNumber) {
     switch(operator) {
         case '+':
-            return (firstNumber) + (secondNumber);
+            return parseFloat(firstNumber) + parseFloat(secondNumber);
         case '-':
             return (firstNumber) - (secondNumber);
         case '/':
