@@ -1,3 +1,5 @@
+'use strict';
+
 let buttons = document.querySelectorAll('.button');
 let display = document.querySelector('.display');
 
@@ -15,7 +17,7 @@ function operate(operator, firstNumber, secondNumber) {
 }
 
 function detectButton(event) {
-    let pushedButton = event.toElement.textContent;
+    let pushedButton = event.target.textContent;
     switch (pushedButton) {
         case '=':
             display.textContent = calculate(display.textContent);
